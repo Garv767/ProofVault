@@ -32,12 +32,13 @@ lerna-debug.log*
 *.sln
 *.sw?
 
-# Environment variables
+# Environment variables - NEVER commit these
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+proofvault-contracts/.env
 
 # Vercel
 .vercel
@@ -62,18 +63,18 @@ Thumbs.db
 *.temp
 .cache/
 
-# Optional: Uncomment if you want to rebuild ZK artifacts in CI
-# public/zk-artifacts/
+# Hardhat (smart contracts)
+proofvault-contracts/cache/
+proofvault-contracts/artifacts/
+proofvault-contracts/node_modules/
 
-# Optional: Uncomment if you have sensitive keys or configs
-# circuits/*.key
-# circuits/*.zkey
-
-*.sh
-/docs
-*.md
-!README.md
+# Generated HTML (not needed in repo)
 /public/architecture.html
 /public/cover.html
 /public/architecture.svg
-!ARCHITECTURE.md
+
+# ZK artifacts (large binary files - regenerated via npm run compile-circuits)
+# Uncomment if you want CI to rebuild them:
+# public/zk-artifacts/
+
+*.sh
