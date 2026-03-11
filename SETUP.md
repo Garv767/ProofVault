@@ -21,7 +21,7 @@
 Garv will send you the GitHub repo link. Once you have it:
 
 ```bash
-git clone https://github.com/YOUR_GARV_SENDS_YOU/ProofVault.git
+git clone https://github.com/Garv767/ProofVault.git
 cd ProofVault
 ```
 
