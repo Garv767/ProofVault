@@ -7,6 +7,8 @@ import PublicStatsPage from './pages/PublicStatsPage';
 import SettingsPage from './pages/SettingsPage';
 import PrivacyPage from './pages/PrivacyPage';
 import { MetricsPage } from './pages/MetricsPage';
+import BountyBrowser from './pages/BountyBrowser';
+import CreateBounty from './pages/CreateBounty';
 
 function App() {
   const location = useLocation();
@@ -50,6 +52,12 @@ function App() {
               <NavLink to="/settings" current={location.pathname === '/settings'}>
                 Settings
               </NavLink>
+              <NavLink to="/bounties" current={location.pathname === '/bounties'}>
+                Browse Bounties
+              </NavLink>
+              <NavLink to="/create-bounty" current={location.pathname === '/create-bounty'}>
+                Post Bounty
+              </NavLink>
             </div>
 
             {/* Right side actions */}
@@ -83,6 +91,8 @@ function App() {
           <Route path="/metrics" element={<MetricsPage />} />
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/bounties" element={<BountyBrowser />} />
+          <Route path="/create-bounty" element={<CreateBounty />} />
         </Routes>
       </main>
 

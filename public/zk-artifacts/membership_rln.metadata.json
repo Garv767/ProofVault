@@ -2,7 +2,7 @@
   "name": "membership_rln",
   "description": "Anonymous Whistleblower Membership & Rate-Limit Circuit",
   "version": "1.0.0",
-  "compiledAt": "2025-08-23T02:57:54.351Z",
+  "compiledAt": "2026-03-14T06:56:30.598Z",
   "compiler": "midnight-compiler-mock",
   "compilerVersion": "0.1.0",
   "signals": [
